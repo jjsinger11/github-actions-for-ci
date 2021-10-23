@@ -31,5 +31,8 @@ jobs:
     - run: npm test
     - uses: actions/upload-artifact@main
         with:
+      - uses: actions/upload-artifact@master
+        with:
           name: webpack artifacts
+          path: public/
           path: public/
